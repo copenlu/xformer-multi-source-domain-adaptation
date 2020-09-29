@@ -23,4 +23,22 @@ In practical machine learning settings, the data on which a model must make pred
 
 # Recreating Results
 
-The code is currently being prepared and will be released shortly.
+To recreate our results, first download the [Amazon Product Reviews](https://www.cs.jhu.edu/~mdredze/datasets/sentiment/) and [PHEME Rumour Detection](https://figshare.com/articles/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/6392078) datasets and place them in the 'data/' directory. For sentiment data place it in a directory called 'data/sentiment-dataset' and for the PHEME data place it in a directory called 'data/PHEME'
+
+Create a new conda environment:
+
+```bash
+$ conda create --name xformer-multisource-domain-adaptation python=3.7
+$ conda activate xformer-multisource-domain-adaptation
+$ pip install -r requirements.txt
+```
+
+Note that this project uses wandb; if you do not use wandb, set the following flag to store runs only locally:
+
+```bash
+export WANDB_MODE=dryrun
+```
+
+## Running all experiments
+
+The files for running all of the experiments are in `run_sentiment_experiments.sh` and `run_claim_experiments.sh`. You can look in these files for the commands to run a particular experiment. Running either of these files will run all 10 variants presented in the paper 5 times.
