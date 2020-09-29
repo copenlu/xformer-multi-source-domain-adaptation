@@ -352,7 +352,7 @@ if __name__ == "__main__":
         optimizer = AdamW(optimizer_grouped_parameters, lr=lr)
         scheduler = ReduceLROnPlateau(optimizer, verbose=True)
 
-        # Smash that mf'in train button
+        # Train
         train(
             model,
             train_dls,

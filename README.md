@@ -41,4 +41,4 @@ export WANDB_MODE=dryrun
 
 ## Running all experiments
 
-The files for running all of the experiments are in `run_sentiment_experiments.sh` and `run_claim_experiments.sh`. You can look in these files for the commands to run a particular experiment. Running either of these files will run all 10 variants presented in the paper 5 times.
+The files for running all of the experiments are in `run_sentiment_experiments.sh` and `run_claim_experiments.sh`. You can look in these files for the commands to run a particular experiment. Running either of these files will run all 10 variants presented in the paper 5 times. The individual scripts used for each experiment are under `emnlp_final_experiments/claim-detection` and `emnlp_final_experiments/sentiment-analysis`

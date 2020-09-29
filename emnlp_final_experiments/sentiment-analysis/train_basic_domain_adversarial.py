@@ -310,7 +310,7 @@ if __name__ == "__main__":
             n_epochs * sum([len(train_dl) for train_dl in train_dls])
         )
 
-        # Smash that mf'in train button
+        # Train
         train(
             model,
             train_dls,
